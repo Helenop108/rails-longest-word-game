@@ -1,0 +1,17 @@
+<h1>Result</h1>
+
+<p>
+
+  <% if @valid == true %>
+    <% if @high_score == true %>
+    "Congatulations <%= @input %> is a english Word"
+    <% else %>
+      "Sorry :( <%= @input %> is not a english Word"
+    <% end %>
+  <% else %>
+    "Sorry :( <%= @input %> is not in the <%= @grid %>"
+  <% end %>
+</p>
+
+
+<%= link_to "Play Again", new_path %>
